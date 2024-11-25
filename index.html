@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸드테크 웹페이지</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- 왼쪽 사이드 메뉴 -->
+    <aside class="sidebar left-sidebar">
+        <h1>목차</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">푸드테크 소개</a></li>
+                <li><a href="#tech">기술 소개</a></li>
+                <li><a href="#quiz">퀴즈</a></li>
+                <li><a href="#news">뉴스</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="content">
+        <!-- 메인 배너 -->
+        <section id="banner">
+            <h2>미래의 식량을 위한 혁신 기술</h2>
+            <p>스마트 농업, AI 레시피, 대체 식품의 세계를 탐험하세요!</p>
+        </section>
+
+        <!-- 푸드테크 소개 -->
+        <section id="about">
+            <h2>푸드테크란?</h2>
+            <p>푸드테크는 식품 산업에 최첨단 기술을 접목하여, 식량 문제를 해결하고 새로운 식문화를 창조하는 분야입니다.</p>
+        </section>
+
+        <!-- 기술 소개 -->
+        <section id="tech">
+            <h2>주요 푸드테크 기술</h2>
+            <div class="tech-item">
+                <h3>스마트팜</h3>
+                <p>자동화와 데이터 분석을 통해 최적의 농작물 재배 환경을 유지합니다.</p>
+            </div>
+            <div class="tech-item">
+                <h3>대체 식품</h3>
+                <p>환경을 보호하고 건강을 고려한 대체육과 대체 유제품 개발이 활발합니다.</p>
+            </div>
+            <div class="tech-item">
+                <h3>AI 기반 맞춤형 레시피</h3>
+                <p>AI 분석을 통해 개인 맞춤형 영양 성분을 추천하고, 레시피를 제공합니다.</p>
+            </div>
+        </section>
+
+        <!-- 퀴즈 -->
+        <section id="quiz">
+            <h2>푸드테크 퀴즈</h2>
+            <p>스마트팜 기술은 무엇을 목표로 하나요?</p>
+            <ul>
+                <li><input type="radio" name="q1" value="A"> 유전자 조작</li>
+                <li><input type="radio" name="q1" value="B"> 자동화된 농작물 재배</li>
+                <li><input type="radio" name="q1" value="C"> 신선 식품 저장 기술</li>
+            </ul>
+            <button onclick="checkAnswer()">정답 확인</button>
+            <div id="result"></div>
+        </section>
+    </main>
+    
+    <!-- 오른쪽 사이드바 -->
+    <aside class="sidebar right-sidebar">
+        <h2>뉴스 & 자료</h2>
+        <ul>
+            <li><a href="#">2024년 푸드테크 트렌드 리포트</a></li>
+            <li><a href="#">AI로 만드는 맞춤형 식품</a></li>
+            <li><a href="#">스마트팜의 미래</a></li>
+        </ul>
+    </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
