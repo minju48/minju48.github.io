@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸드테크 웹페이지</title>
+    <link rel="stylesheet" href="style2.css">
+   
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- 왼쪽 사이드 메뉴 -->
+    <aside class="sidebar left-sidebar">
+        <h1>목차</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">푸드테크 소개</a></li>
+                <li><a href="#tech">다양한 푸드테크 기술의 활용 사례</a></li>
+                <li><a href="#future">푸드테크의 미래 전망</a></li>
+                <li><a href="#feedback">웹페이지에 대한 평가</a></li>
+                
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="content">
+        <!-- 메인 배너 -->
+        <section id="banner">
+            <h2>미래의 식량을 위한 혁신 기술</h2>
+            <p>스마트 농업, 대체 식품, 푸드 딜리버리 및 요리 로봇 등 다양한 푸드테크 기술에 대해 알아보아요!</p>
+            
+
+        </section>
+
+        <!-- 푸드테크 소개 -->
+        <section id="about">
+            
+            </style>
+            <h2><span>푸드테크</span>란?</h2>
+            <p><span>푸드테크</span>는 식품을 뜻하는 Food와 기술을 뜻하는 Technology의 합성어로 식품과 기술을 결합하여 더욱 혁신적이고 효율적인 식품 생산, 유통, 소비 등에 대한 기술 혁신을 추구하는 산업입니다.
+                <span>푸드테크</span>는 다양한 기술을 활용하여 식품 산업의 생산성, 효율성, 안전성, 지속가능성 등의 개선을 목적으로 합니다. 이러한 기술에는 인공지능, 빅데이터, 로봇 공학, 생물공학, 자동화 기술 등이 포함됩니다.
+               <img src="이미지\food1.jpeg" alt="푸드테크 사진" width="100">
+            </p>
+        </section>
+
+  
+        <!-- 기술 소개 -->
+        <section id="tech">
+            <h2>다양한 푸드테크 기술의 활용 사례</h2>
+            <div class="tech-item1">
+                <h3><span>스마트팜</span></h3>
+                <p><h4>자동화와 데이터 분석을 통해 최적의 농작물 재배 환경을 유지합니다. </h4>
+                    스마트팜은 농업과 첨단 기술의 결합으로, 센서, 데이터 분석, 로봇, 인공지능 등 다양한 기술을 농업 현장에 적용한 형태를 말합니다. 이러한 스마트팜 기술은 대표적인 푸드테크 기술 활용 사례입니다. 
+                이를 통해 농작물 재배와 관리 과정을 최적화하여 생산성을 극대화하고, 비용 절감과 더불어 자원의 낭비를 최소화합니다. 특히 전통적인 농업에서는 수작업과 경험에 의존해왔던 많은 작업을 자동화시켜 정밀하게 제어할 수 있다는 점에서 그 필요성이 점점 더 강조되고 있습니다. </p>
+              
+
+            </div>
+            <div class="tech-item2">
+                <h3><span>대체 식품</span></h3>
+                <p><h4>환경을 보호하고 건강을 고려한 대체육과 대체 유제품 개발이 활발합니다.</h4>
+                    대체식품은 미래식품 카테고리 중의 하나로 대체육, 대체우유 등 주로 동물성 식품을 식물성으로 대체하는 식품을 가리킵니다. 
+                    더 넓은 의미로는 설탕 및 첨가당류 대체, 밀가루 또는 글루텐 대체, 나트륨 대체 등 다양한 식품군으로 널리 확장되어 사용될 수 있습니다.
+                  <hr>
+                   <h4>대체육</h4>
+                   진짜 고기처럼 만든 인공 고기로, 크게 동물 세포를 배양한 고기와 식물 성분을 사용한 고기로 나뉩니다. 대체육 시장은 육류 생산 과정에서 발생하는 생태계 파괴와 지구온난화에 대한 비판, 채식주의자의 증가 등에 따라 향후 급성장할 것으로 전망되는 분야입니다.
+                  <img src="202402789 김민주_웹페이지 제작/대체육.JPG" alt="대체육 사진" width="100">
+                   <section id="quiz1">
+                    <h4>대체육 퀴즈</h4>
+                    <p>다음 중 대체육의 주재료로 사용되지 않는 것은?</p>
+                    <ul>
+                        <li><input type="radio" name="q1" value="A"> 콩 단백질</li>
+                        <li><input type="radio" name="q1" value="B"> 버섯</li>
+                        <li><input type="radio" name="q1" value="C"> 동물 근육</li>
+                        <li><input type="radio" name="q1" value="D"> 완두콩 단백질</li>
+                    </ul>
+                    <button onclick="checkQuizAnswer()">정답 확인</button>
+                    <div id="quiz-result"></div>
+                    <section id="process-game">
+                        <h4>대체육 가공 과정 순서 맞추기</h4>
+                        <p>아래 항목을 드래그하여 올바른 순서를 맞춰보세요:</p>
+                        <ul id="process-list">
+                            <li draggable="true" id="item1">3. 조미료 추가</li>
+                            <li draggable="true" id="item2">2. 단백질 추출</li>
+                            <li draggable="true" id="item3">4. 성형 및 포장</li>
+                            <li draggable="true" id="item4">1. 원재료 준비</li>
+                        </ul>
+                        <button onclick="checkOrder()">정답 확인</button>
+                        <div id="order-result"></div>
+                    </section>
+         
+                </p>
+              
+            </div>
+            <div class="tech-item3">
+                <h3><span>푸드 딜리버리 및 조리 로봇</span></h3>
+                <p>
+                    푸드 딜리버리는 AI와 자율주행 기술을 통해 더욱 신속하고 효율적으로 발전하고 있습니다. 
+                    또한 로봇 요리는 첨단 기술을 활용해 정확하고 빠른 음식 준비를 가능하게 합니다.
+                </p>
+                <hr>
+                <h4>배달 플랫폼</h4>
+                <p>배달 플랫폼은 푸드테크와 딜리버리가 합쳐진 것이라고 볼 수 있습니다. 소비자의 취향과 데이터를 분석해 음식을 추천해주고 맞춤형 메뉴를 제공해주기 때문입니다.
+                    또한 AI 기반 경로 최적화로 빠른 배달을 할 수 있게 됩니다. 이러한 배달 플랫폼 역시 요리를 기술로 연결했으므로 푸드테크 기술이라고 볼 수 있습니다.
+                </p>
+                <hr>
+                <h4>조리 로봇</h4>
+                <p>조리 로봇은 인간 대신에 요리를 하는 로봇입니다. 뜨거운 기름 앞에서 튀김을 뒤집던 손길은 정밀하게 움직이는 로봇 팔로 대체되고, 자동화 시스템을 통해 로봇이 고객의 취향에 맞춘 샐러드를 만들어주기도 합니다. 자동화 기술의 도입으로 단순 반복 작업은 줄어들고, 조리 방식의 기준도 서서히 바뀌고 있습니다.</p>
+
+            </div>
+        </section>
+
+        <!-- 푸드테크의 미래 전망 -->
+        <section id="future">
+            <h2><span>푸드테크</span>의 미래 전망</h2>
+            푸드테크 혁명은 지속 가능성과 식량 안보를 위해 음식 산업을 혁명화하고 있습니다. 
+                정밀농업과 수직농업과 같은 푸드테크 솔루션은 농지와 물 사용을 최적화하고 작물 수율을 증가시켜 식량 생산의 환경적 영향을 줄이고 있습니다.
+                <hr>
+                <h3>자원 절약</h3>
+                <p>정밀농업은 GPS 및 데이터 분석을 사용하여 농부가 농지의 특정 영역에 정확하게 물과 영양분을 공급하도록 합니다. 이를 통해 물 소비가 최대 30%까지 줄어들고, 비료 사용이 최대 70%까지 감소했습니다.
+                 또한 수직농업은 고층 건물 내에서 음식을 재배하는 방식으로, 전통적인 농장에 비해 작물 수율이 높고 물 소비가 95%까지 절감됩니다.</p>
+                <h3>쓰레기 감소</h3>
+                <p>푸드테크는 식량 폐기물을 줄이는 데도 기여합니다. 예측 분석은 수요를 더욱 정확하게 예측하고, 공급망의 효율성을 향상시켜 과잉 생산을 방지합니다. 또한, AI 구동 앱은 소비자에게 익은 과일이나 채소를 할인가로 구매할 수 있는 기회를 제공하여 폐기물을 줄입니다. 
+                    전 세계적으로 식량 폐기물을 1/4로 줄인 사례가 있으며, 이는 약 1억 4,300만 톤의 음식 절약에 해당합니다.</p>
+                <h3>디지털 농업시대</h3>  
+                <p>푸드테크는 식량 산업에 디지털 농업시대를 열었습니다. 데이터 분석과 인공지능을 활용한 혁신은 환경적 영향을 줄이고, 식량 폐기물을 줄이며, 식량 안보를 향상시키는 무한한 잠재력을 갖고 있습니다.
+                     이러한 솔루션을 지속적으로 채택하면 미래 세대를 위해 지속 가능하고 안전한 식료시스템 구축에 기여할 수 있습니다.</p>  
+        </section>
+
+        <section id="feedback">
+            <h2>푸드테크 페이지를 잘 이용하셨나요?</h2>
+            <p>페이지에 대한 의견을 알려주세요!</p>
+            <button onclick="handleFeedback(true)">예</button>
+            <button onclick="handleFeedback(false)">아니오</button>
+        </section>
+
+    </main>
+    
+    <!-- 오른쪽 사이드바 -->
+    <aside class="sidebar right-sidebar">
+        <h2>뉴스 & 자료</h2>
+        <ul>
+            <li><a href="https://sti.kostat.go.kr/window/2023b/main/2023_win_07.html">AI 스마트팜 기술이 농업의 패러다임을 바꾼다</a></li>
+            <li><a href="https://www.foodnews.co.kr/news/articleView.html?idxno=104815">미래식품, 대체식품에 대하여</a></li>
+            <li><a href="https://www.pignpork.com/news/articleView.html?idxno=1358">대체육은 미래 먹거리? 시사점과 대응전략</a></li>
+            <li><a href="https://blog.naver.com/w_ouldulike/223661982535">조리 로봇이 요리를 한다!</a></li>
+            <li><a href="https://biz.heraldcorp.com/article/10013945?ref=naver">푸드테크의 미래 발전방안 모색</a></li>
+        </ul>
+    </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
